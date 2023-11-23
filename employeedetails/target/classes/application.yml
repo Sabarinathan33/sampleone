@@ -1,0 +1,35 @@
+#
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/employee
+#    username: postgres
+#    password: Kgisl@123
+##    driverClassName: com.postgres.jdbc.Driver
+#   spring.datasource.database-platform=rg.hibernate.dialect.postgreSQL9Dialect
+   
+spring:
+ jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+ datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/counterParty
+    username: postgres
+    password: Kgisl@123
+    driverClassName: org.postgresql.Driver
+
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+ jackson:
+   serialization:
+     FAIL_ON_EMPTY_BEANS: false
+ h2:
+   console:
+     settings:
+       web-allow-others : true
+     enabled: true
+     path: /db 
+
